@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Ruda:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.header_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header_container>h1{
+text-align: center;
+font-family: "Ruda", sans-serif;
+}
+
+.links > a{
+    font-family: "Ruda", sans-serif;
+    text-decoration-line: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;} 
+
+.icons>i{
+    margin-right: 10px;
+    width: 40px;
+}
+
+.image-container>img{
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.image-container{
+position: relative;
+font-family: "Quattrocento", serif;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+.text-overlay>h1{
+    font-size: 101px;
+    color: white;
+    font-weight: 700;
+    line-height: 108.5px;
+    text-align: center;
+}
+
+.text-overlay>p{
+    font-family: "Ruda", sans-serif;
+    font-size: 25px;
+    margin-left: 5px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+.small-line{
+    width: 409px;
+    height: 5px;
+    background-color: #F24C4C;
+    margin-left: 10px;
+}
+
