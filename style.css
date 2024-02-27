@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Ruda:wght@400..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
 }
 
 #header {
@@ -15,6 +19,7 @@
     background-color: black;
     color: white;
 }
+
 .header_container {
     width: 90%;
     margin: auto;
@@ -24,12 +29,12 @@
     padding: 15px;
 }
 
-.header_container>h1{
-text-align: center;
-font-family: "Ruda", sans-serif;
+.header_container>h1 {
+    text-align: center;
+    font-family: "Ruda", sans-serif;
 }
 
-.links > a{
+.links>a {
     font-family: "Ruda", sans-serif;
     text-decoration-line: none;
     color: white;
@@ -40,30 +45,33 @@ font-family: "Ruda", sans-serif;
 .links {
     display: flex;
     align-items: center;
-    justify-content: center;} 
+    justify-content: center;
+}
 
-.icons>i{
+.icons>i {
     margin-right: 10px;
     width: 40px;
 }
 
-.image-container>img{
-width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
+.image-container>img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.image-container{
-position: relative;
-font-family: "Quattrocento", serif;
+.image-container {
+    position: relative;
+    font-family: "Quattrocento", serif;
 }
 
-.text-overlay{
+.text-overlay {
     position: absolute;
     top: 80px;
     left: 70px;
 }
-.text-overlay>h1{
+
+
+.text-overlay>h1 {
     font-size: 101px;
     color: white;
     font-weight: 700;
@@ -71,17 +79,98 @@ font-family: "Quattrocento", serif;
     text-align: center;
 }
 
-.text-overlay>p{
+.text-overlay>p {
     font-family: "Ruda", sans-serif;
     font-size: 25px;
     margin-left: 5px;
     color: #FFFFFF;
     line-height: 40px;
 }
-.small-line{
+
+
+.small-line {
     width: 409px;
     height: 5px;
     background-color: #F24C4C;
     margin-left: 10px;
 }
 
+/* Gallery section */
+
+#heading_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gallery_heading {
+    color: white;
+    font-family: "Quattrocento", serif;
+    font-size: 60px;
+
+}
+
+#heading_section_line {
+    border-bottom: 10px solid #F24C4C;
+    width: 30%;
+    margin-bottom: 20px
+}
+
+#gallery {
+    width: 100%;
+    padding: 20px;
+}
+
+#gallery_img_container {
+    margin-top: 10px;
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas:
+        "a b c"
+        "a b c"
+        "a d c"
+        "a d e"
+        "a f e"
+        "a f e";
+    gap: 10px;
+}
+
+.image1 {
+    grid-area: a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image2 {
+    grid-area: b;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image3 {
+    grid-area: c;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image4 {
+    grid-area: d;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image5 {
+    grid-area: e;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image6 {
+    grid-area: f;
+    overflow: hidden;
+    border-radius: 10px;
+}
